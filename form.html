@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>登録フォーム</title>
+    
+    <!-- Bulma -->
+    <link rel="stylesheet" href="css/bulma.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <p class="title navbar-item">Goagle</p>
+            </div>
+        </nav>
+    </header>
+    <!-- メイン -->
+    <main class="columns hero">
+        <div class="column is-three-fifths is-offset-one-fifth hero-body">
+            <h1 class="title">会員登録フォーム</h1>
+            
+            <!-- 登録フォーム -->
+            <form class="field" method="POST" action="">
+
+                <!-- 名前入力 -->
+                <div class="field">
+                    <label class="label">お名前</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Name" name="name">
+                    </div>
+                </div>
+
+                <!-- メールアドレス入力 -->
+                <div class="field">
+                    <label class="label">メールアドレス</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email" name="mail">
+                    </div>
+                </div>
+
+                <!-- パスワード入力 -->
+                <div class="field">
+                    <label class="label">パスワード</label>
+                    <div class="control">
+                        <input class="input" type="password" placeholder="Password" name="password">
+                        <p class="help">大文字小文字記号を1つ以上含めて30文字以上</p>
+                    </div>
+                </div>
+
+                <!-- 性別選択 -->
+                <div class="field">
+                    <p class="label">性別</p>
+                    <div class="control" id="gen">
+                        <label class="radio">
+                            <input type="radio" name="gen" value="man">
+                            男
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="gen" value="men">
+                            女
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- 利用規約に同意 -->
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            利用規約に同意する
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- 送信ボタン -->
+                <div class="field is-grouped">
+                    <div class="control">
+                        <input type="submit" class="button is-link">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <small>&copy;2018 情報処理研究会</small>
+        </div>
+    </footer>    
+    
+</body>
+</html>

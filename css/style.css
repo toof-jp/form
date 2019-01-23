@@ -1,0 +1,10 @@
+body{
+    width: 100%;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
